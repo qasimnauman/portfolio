@@ -9,18 +9,17 @@ const Experience = () => {
 
   return (
     <div className="flex flex-col w-[90%] mx-auto justify-center items-center mb-10">
-      <div className="flex flex-row items-center text-white w-full">
-        <h1 className="mr-8 font-poppins-extra-bold text-6xl text-[#B5C6E0] ">
-          experience.
+      <div className="flex flex-row items-center text-white w-full gap-4">
+        <h1 className="font-poppins-extra-bold text-6xl text-[#B5C6E0] whitespace-nowrap">
+          tools & tech.
         </h1>
-        <div className="h-1 w-full bg-[#B5C6E0] rounded-2xl"></div>
+        <div className="flex-1 h-1 bg-[#B5C6E0] rounded-2xl"></div>
       </div>
 
       <div className="flex flex-col items-center text-white w-full mt-4">
         <div className="flex flex-col items-start w-[70%] text-white">
           <h3>What I am good at.</h3>
         </div>
-
         <div className="flex flex-row gap-4 justify-between w-[90%] items-start mt-8">
           <SkillsCard skills={devOpsSkills} />
           <SkillsCard skills={frontEndSkills} />
