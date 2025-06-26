@@ -1,27 +1,28 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useRef } from "react";
+import useIsVisible from "../../hooks/isVisible";
 import Skills from "./Skills";
 
-const useIsVisible = (ref) => {
-  const [isIntersecting, setIntersecting] = useState(false);
+// const useIsVisible = (ref) => {
+//   const [isIntersecting, setIntersecting] = useState(false);
 
-  useEffect(() => {
-    const currentElement = ref.current;
-    if (!currentElement) return;
+//   useEffect(() => {
+//     const currentElement = ref.current;
+//     if (!currentElement) return;
 
-    const observer = new IntersectionObserver(([entry]) => {
-      setIntersecting(entry.isIntersecting);
-    });
+//     const observer = new IntersectionObserver(([entry]) => {
+//       setIntersecting(entry.isIntersecting);
+//     });
 
-    observer.observe(currentElement);
+//     observer.observe(currentElement);
 
-    return () => {
-      observer.unobserve(currentElement);
-      observer.disconnect();
-    };
-  }, [ref]);
+//     return () => {
+//       observer.unobserve(currentElement);
+//       observer.disconnect();
+//     };
+//   }, [ref]);
 
-  return isIntersecting;
-};
+//   return isIntersecting;
+// };
 
 const SkillsCard = ({ skills }) => {
   const ref = useRef();

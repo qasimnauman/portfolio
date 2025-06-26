@@ -1,19 +1,25 @@
 import React from "react";
 import NavItem from "./NavItem";
+import { Home, User, LayoutGrid, BookText, Image } from "lucide-react";
+
+const navItems = [
+  { label: "Home", path: "#", icon: <Home size={18} /> },
+  { label: "About", path: "#about", icon: <User size={18} /> },
+  { label: "Work", path: "#projects", icon: <LayoutGrid size={18} /> },
+  { label: "Blog", path: "#blog", icon: <BookText size={18} /> },
+  { label: "Gallery", path: "#gallery", icon: <Image size={18} /> },
+];
 
 const Navbar = () => {
   return (
-    <nav className="bg-blue-900 p-4 shadow-md top-0 left-0 right-0 z-50">
-      <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-white text-xl font-bold">MyPortfolio</h1>
-
-        <div className="space-x-6">
-          <NavItem label="Home" path="#home" />
-          <NavItem label="Projects" path="#projects" />
-          <NavItem label="About" path="#about" />
-          <NavItem label="Contact" path="#contact" />
-        </div>
-      </div>
+    <nav className="fixed top-8 left-1/2 -translate-x-1/2 z-50 bg-black/30 backdrop-blur-md border border-white/20 text-white shadow-lg px-6 py-2 rounded-2xl">
+      <ul className="flex items-center gap-4">
+        {navItems.map(({ label, path, icon }) => (
+          <li key={label}>
+            <NavItem label={label} path={path} icon={icon} />
+          </li>
+        ))}
+      </ul>
     </nav>
   );
 };

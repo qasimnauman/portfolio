@@ -1,6 +1,7 @@
 import React from "react";
 import SkillsCard from "../components/About/SkillsCard";
 import skills from "../data/skills.json";
+import Heading from "../components/Heading";
 
 const Experience = () => {
   const devOpsSkills = skills.find((item) => item.name === "DevOps & Cloud");
@@ -9,12 +10,7 @@ const Experience = () => {
 
   return (
     <div className="flex flex-col w-[90%] mx-auto justify-center items-center mb-10">
-      <div className="flex flex-row items-center text-white w-full gap-4">
-        <h1 className="font-poppins-extra-bold text-6xl text-[#B5C6E0] whitespace-nowrap">
-          tools & tech.
-        </h1>
-        <div className="flex-1 h-1 bg-[#B5C6E0] rounded-2xl"></div>
-      </div>
+      <Heading name="tools & tech."/>
 
       <div className="flex flex-col items-center text-white w-full mt-4">
         <div className="flex flex-col items-start w-[70%] text-white">

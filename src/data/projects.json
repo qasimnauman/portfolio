@@ -203,5 +203,95 @@
         "url": "https://example.com",
         "image": "https://pmstudycircle.com/wp-content/uploads/2022/05/Project-Portfolio-Management.jpg",
         "github": "http://github.com/qasimnauman/portfolio"
+    },
+    {
+        "id": 2,
+        "name": "Project B",
+        "description": "This is a description of Project B.",
+        "technologies": [
+            {
+                "name": "JavaScript",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+                "link": "https://www.javascript.com/"
+            },
+            {
+                "name": "React",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+                "link": "https://reactjs.org/"
+            },
+            {
+                "name": "React",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+                "link": "https://reactjs.org/"
+            },
+            {
+                "name": "Node.js",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+                "link": "https://nodejs.org/"
+            }
+        ],
+        "url": "https://example.com",
+        "image": "https://pmstudycircle.com/wp-content/uploads/2022/05/Project-Portfolio-Management.jpg",
+        "github": "http://github.com/qasimnauman/portfolio"
+    },
+    {
+        "id": 2,
+        "name": "Project B",
+        "description": "This is a description of Project B.",
+        "technologies": [
+            {
+                "name": "JavaScript",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+                "link": "https://www.javascript.com/"
+            },
+            {
+                "name": "React",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+                "link": "https://reactjs.org/"
+            },
+            {
+                "name": "React",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+                "link": "https://reactjs.org/"
+            },
+            {
+                "name": "Node.js",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+                "link": "https://nodejs.org/"
+            }
+        ],
+        "url": "https://example.com",
+        "image": "https://pmstudycircle.com/wp-content/uploads/2022/05/Project-Portfolio-Management.jpg",
+        "github": "http://github.com/qasimnauman/portfolio"
+    },
+    {
+        "id": 2,
+        "name": "Project B",
+        "description": "This is a description of Project B.",
+        "technologies": [
+            {
+                "name": "JavaScript",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+                "link": "https://www.javascript.com/"
+            },
+            {
+                "name": "React",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+                "link": "https://reactjs.org/"
+            },
+            {
+                "name": "React",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+                "link": "https://reactjs.org/"
+            },
+            {
+                "name": "Node.js",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+                "link": "https://nodejs.org/"
+            }
+        ],
+        "url": "https://example.com",
+        "image": "https://pmstudycircle.com/wp-content/uploads/2022/05/Project-Portfolio-Management.jpg",
+        "github": "http://github.com/qasimnauman/portfolio"
     }
 ]
