@@ -1,18 +1,41 @@
 import React from "react";
-import Navbar from "./components/Navbar";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+  Route,
+} from "react-router-dom";
+
+import Layout from "./Layout";
+
+import Navbar from "./components/Header/Navbar";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Experience from "./pages/Experience";
 
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+      </Route>
+    </>
+  )
+);
+
 function App() {
   return (
     <>
-      <Navbar />
-      <Home />
-      <About/>
-      <Experience />
-      <Projects />
+      <RouterProvider router={router} />
+      {/* <div className="bg-black/60">
+        <Navbar />
+        <Home />
+        <About />
+        <Experience />
+        <Projects />
+      </div> */}
     </>
     // <Router>
     //   <Routes>

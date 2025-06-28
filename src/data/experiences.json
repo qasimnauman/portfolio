@@ -1,0 +1,18 @@
+[
+    {
+        "organizationName": "Cyberoide Tech",
+        "position": "Junior DevOps Engineer",
+        "timePeriod": "2024 - Present",
+        "linkedInURL":"https://www.linkedin.com/company/cyberoide-tech",
+        "websiteURL":"https://cyberoide.tech",
+        "responsibilties": {
+            "res1": "Assigting clients",
+            "res2": "Ensuring Complaince",
+            "res3": "Collaboration with Developers"
+        },
+        "images":{
+            "img1":"https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg",
+            "img2":"https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg"
+        }
+    }
+]
