@@ -14,6 +14,8 @@ import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Experience from "./pages/Experience";
 
+import NotFound from "./components/NotFound";
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
@@ -21,6 +23,7 @@ const router = createBrowserRouter(
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
       </Route>
+      <Route path="*" element={<NotFound />} />
     </>
   )
 );
