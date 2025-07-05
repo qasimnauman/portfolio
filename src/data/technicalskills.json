@@ -1,0 +1,34 @@
+[
+    {
+        "title": "Cloud Providers",
+        "description": "AWS, Azure"
+    },
+    {
+        "title": "CI/CD",
+        "description": "GitHub Actions, Jenkins, GitLab CI"
+    },
+    {
+        "title": "Containerization",
+        "description": "Docker, Kubernetes"
+    },
+    {
+        "title": "IaC",
+        "description": "Terraform, Ansible"
+    },
+    {
+        "title": "Monitoring and Logging",
+        "description": "Prometheus, Grafana, ELK Stack"
+    },
+    {
+        "title": "Databases",
+        "description": "MySQL, MongoDB"
+    },
+    {
+        "title": "Programming Languages",
+        "description": "C++, Python, JavaScript"
+    },
+    {
+        "title": "Web Development",
+        "description": "React, Angular, Node.js"
+    }
+]

@@ -1,12 +1,14 @@
 import React from "react";
 import ProfileImage from "../assets/images/image.png";
 import ExperienceData from "../data/experiences.json";
+import SkillsData from "../data/technicalskills.json";
 import { CalendarDays, ChevronRight, Globe } from "lucide-react";
 import { FaLinkedin, FaSquareXTwitter, FaGithub } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import ProfilesLink from "../components/About/ProfilesLink";
 import OrganizationLink from "../components/About/OrganizationLink";
 import Experience from "../components/About/Experience";
+import TechnicalSkill from "../components/About/TechnicalSkill";
 
 const About = () => {
   return (
@@ -116,6 +118,9 @@ const About = () => {
                   Technical Skills
                 </h2>
               </div>
+              {SkillsData.map((skill, idx) => (
+                <TechnicalSkill key={idx} {...skill} />
+              ))}
               <div className="flex flex-row">
                 <div className="flex flex-col gap-2">
                   <h3 className="text-xl font-poppins-semi-bold">
