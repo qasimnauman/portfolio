@@ -2,17 +2,44 @@
     {
         "organizationName": "Cyberoide Tech",
         "position": "Junior DevOps Engineer",
-        "timePeriod": "2024 - Present",
-        "linkedInURL":"https://www.linkedin.com/company/cyberoide-tech",
-        "websiteURL":"https://cyberoide.tech",
+        "timePeriod": "Sep 2024 - Present",
+        "linkedInURL": "https://www.linkedin.com/company/cyberoide-tech",
+        "websiteURL": "https://cyberoide.tech",
         "responsibilties": {
-            "res1": "Assigting clients",
-            "res2": "Ensuring Complaince",
-            "res3": "Collaboration with Developers"
+            "res1": "Collaborated with senior engineers to plan and execute seamless cloud migrations between AWS and Azure, achieving zero-downtime while preserving data integrity.",
+            "res2": "Designed, deployed, and maintained a highly available AKS cluster with Horizontal Pod Autoscaling, supporting sustained throughput of 15,000 requests/10 minutes.",
+            "res3": "Integrated security scanning tools—Snyk, Dependabot, and Trivy—into CI/CD pipelines, automating vulnerability detection and reducing remediation time by 40%.",
+            "res4": "Assisted in resolving compliance assessments using Prowler and remediated Azure infrastructure to meet PCI-DSS requirements, strengthening security posture and passing external audits.",
+            "res5": "Architected and implemented end-to-end CI/CD pipelines with Jenkins, GitHub Actions and AWS Code Pipelines automating application deployments.",
+            "res6": "Managed container platforms across AWS ECS, AKS and Azure Container Apps including cluster scaling, and cost optimization improving resource utilization by 30%.",
+            "res7": "Assisted Clients in remidiating AWS Security Hub findings according to Cloud Security best practices.",
+            "res8": "Conducted dynamic application security testing with OWASP ZAP and static code analysis with ZAP and Trivy, eliminating critical vulnerabilities prior to production release.",
+            "res9": "Developed Ansible playbooks for automated configuration management and patching of Linux servers, standardizing environments.",
+            "res10": "Built event-driven workflows using AWS Lambda and Azure Functions, offloading periodic tasks and reducing operational costs by 25%.",
+            "res12": "Guided and mentored 2 intern devops engineers."
         },
-        "images":{
-            "img1":"https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg",
-            "img2":"https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg"
+        "images": {
+            "img1": "src/assets/images/Sozorok Health.png",
+            "img3": "src/assets/images/zpayd.png",
+            "img2": "src/assets/images/Boultlit.png"
+        }
+    },
+    {
+        "organizationName": "Bytewise Limited",
+        "position": "DevOps Enginner Intern",
+        "timePeriod": "Jul 2024 - Sep 2024",
+        "linkedInURL": "https://www.linkedin.com/company/bytewiseltd",
+        "websiteURL": "https://www.bytewiseltd.com",
+        "responsibilties": {
+            "res6": "Earned Top Fellow recognition through consistent high performance, rapid skill acquisition, and collaborative contributions.",
+            "res1": "Mastered core Kubernetes operations by deploying and managing containerized applications on Minikube.",
+            "res2": "Orchestrated multi-container deployments using Docker and Docker Compose.",
+            "res3": "Automated routine operational tasks with Bash and Python scripts, cutting manual effort and minimizing human error.",
+            "res4": "Architected and provisioned a secure, scalable three-tier cloud infrastructure using Terraform, enforcing infrastructure-as-code best practices.",
+            "res5": "Implemented end-to-end monitoring and alerting with AWS CloudWatch, Prometheus, and Grafana, enabling proactive performance tuning and incident response."
+        },
+        "images": {
+            "img1": "src/assets/images/Qasim Nauman - Bytewise.png"
         }
     }
 ]

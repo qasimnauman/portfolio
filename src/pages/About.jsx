@@ -15,7 +15,7 @@ const About = () => {
     <>
       <div
         id="about"
-        className="text-[#B5C6E0] flex flex-col w-[90%] mt-30 mx-auto justify-center items-center mb-10"
+        className="text-white flex flex-col w-[90%] mt-30 mx-auto justify-center items-center mb-10"
       >
         <div className="flex flex-row gap-20 w-[90%] ">
           <div className="flex-shrink-0 w-[30%] h-24 ">
@@ -121,22 +121,6 @@ const About = () => {
               {SkillsData.map((skill, idx) => (
                 <TechnicalSkill key={idx} {...skill} />
               ))}
-              <div className="flex flex-row">
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-xl font-poppins-semi-bold">
-                    Cloud Providers
-                  </h3>
-                  <p className="text-md font-poppins-light">AWS, Azure</p>
-                </div>
-              </div>
-              <div className="flex flex-row">
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-xl font-poppins-semi-bold">CI/CD</h3>
-                  <p className="text-md font-poppins-light">
-                    GitHub Actions, Jekins, GitLab CI
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>

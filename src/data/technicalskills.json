@@ -8,7 +8,7 @@
         "description": "GitHub Actions, Jenkins, GitLab CI"
     },
     {
-        "title": "Containerization",
+        "title": "Containers and Orchestration",
         "description": "Docker, Kubernetes"
     },
     {
@@ -17,7 +17,15 @@
     },
     {
         "title": "Monitoring and Logging",
-        "description": "Prometheus, Grafana, ELK Stack"
+        "description": "Prometheus, Grafana"
+    },
+    {
+        "title":"Security",
+        "description":"Snyk, OWASP, Prowler, Trivy, SonarQube, Dependabot"
+    },
+    {
+        "title":"Web Servers",
+        "description":"Nginx, Apache"
     },
     {
         "title": "Databases",
@@ -25,10 +33,10 @@
     },
     {
         "title": "Programming Languages",
-        "description": "C++, Python, JavaScript"
+        "description": "C++, Python, JavaScript, Bash"
     },
     {
         "title": "Web Development",
-        "description": "React, Angular, Node.js"
+        "description": "React, Express.js ,Node.js, ASP.NET"
     }
 ]
