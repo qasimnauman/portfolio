@@ -25,13 +25,13 @@ const Home = () => {
               to="about"
               icon1={<FaCircleUser className="h-8 w-8" />}
               icon2={<FaCircleChevronRight className="h-5 w-5" />}
-              text="About Me"
+              text="More About Me"
             />
           </div>
         </div>
       </div>
     </>
   );
-};
+};  
 
 export default Home;
