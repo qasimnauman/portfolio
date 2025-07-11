@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import { Globe, Plus } from "lucide-react";
 import { FaLinkedin } from "react-icons/fa6";
 import OrganizationLink from "./OrganizationLink";
@@ -12,7 +12,7 @@ const Experience = ({
   responsibilties,
   images,
 }) => {
-  const [selectedImage, setSelectedImage] = useState(null);
+  // const [selectedImage, setSelectedImage] = useState(null);
   const carouselRef = useRef(null);
 
   const handleMouseDown = (e) => {
@@ -40,20 +40,20 @@ const Experience = ({
     carousel.addEventListener("mouseleave", handleMouseUp);
   };
 
-  const handleImageClick = (src) => {
-    setSelectedImage(src);
-    // console.log(src.desc);
-  };
+  // const handleImageClick = (src) => {
+  //   setSelectedImage(src);
+  //   // console.log(src.desc);
+  // };
 
-  const closeModal = () => {
-    setSelectedImage(null);
-  };
+  // const closeModal = () => {
+  //   setSelectedImage(null);
+  // };
 
-  const handleOutsideClick = (e) => {
-    if (e.target === e.currentTarget) {
-      closeModal();
-    }
-  };
+  // const handleOutsideClick = (e) => {
+  //   if (e.target === e.currentTarget) {
+  //     closeModal();
+  //   }
+  // };
 
   return (
     <div className="flex flex-col gap-6 mt-6">
@@ -103,7 +103,7 @@ const Experience = ({
           Object.values(images).map((src, idx) => (
             <div key={idx} className="snap-start flex-shrink-0">
               <img
-                onClick={() => handleImageClick(src)}
+                // onClick={() => handleImageClick(src)}
                 loading="lazy"
                 src={src.src}
                 alt={`img-${idx}`}
@@ -113,7 +113,7 @@ const Experience = ({
           ))}
       </div>
 
-      {/* Modal Popup for Image */}
+      {/* Modal Popup for Image
       {selectedImage && (
         <div
           className="fixed inset-0 bg-black/70 bg-opacity-50 flex justify-center items-center z-50"
@@ -150,7 +150,7 @@ const Experience = ({
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 };

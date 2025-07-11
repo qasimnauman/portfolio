@@ -1,6 +1,12 @@
 import React from "react";
 import NavItem from "./NavItem";
-import { Home, CircleUserRound, LayoutGrid, BookText, Image } from "lucide-react";
+import {
+  Home,
+  CircleUserRound,
+  LayoutGrid,
+  BookText,
+  Image,
+} from "lucide-react";
 
 const navItems = [
   { label: "Home", path: "/", icon: <Home size={18} /> },
@@ -12,7 +18,7 @@ const navItems = [
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-8 left-1/2 -translate-x-1/2 z-50 bg-black/10 backdrop-blur-md border border-white/20 shadow-lg px-6 py-2 rounded-2xl">
+    <nav className="fixed md:top-8 h-13 left-1/2 -translate-x-1/2 bottom-8 bg-black/10 backdrop-blur-md border border-white/20 shadow-lg px-6 py-2 rounded-2xl">
       <ul className="flex items-center gap-4">
         {navItems.map(({ label, path, icon }) => (
           <li key={label}>

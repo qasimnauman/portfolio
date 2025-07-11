@@ -1,47 +1,47 @@
 import React from "react";
-import { FaLinkedinIn, FaSquareXTwitter , FaGithub } from "react-icons/fa6";
+import { FaLinkedinIn, FaSquareXTwitter, FaGithub } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="w-[90%] max-w-screen-xl mb-4 mx-auto flex flex-col sm:flex-row justify-between items-center text-[#B5C6E0]">
-        <div className="text-md font-poppins-medium">
-          © 2025 Muhammad Qasim Nauman
+    <footer className="relative justify-center">
+      <div className="w-full max-w-screen-xl mb-4 px-4 py-4 mb:px-16 mx-auto flex flex-row justify-between items-center text-[#B5C6E0]">
+        <div className="text-sm md:text-md font-poppins-medium">
+          © 2025 Qasim Nauman
         </div>
-        <div className="flex flex-row gap-4 mt-2 sm:mt-0">
+        <div className="flex flex-row gap-2 md:gap-4 justify-center items-center">
           <Link
             to="http://linkedin.com/in/mqasimnauman"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center transition-all duration-300 ease-in-out hover:scale-110"
+            className="transition-all duration-300 ease-in-out hover:scale-110"
           >
-            <FaLinkedinIn className="h-8 w-8" />
+            <FaLinkedinIn className="md:h-8 md:w-8 h-6 w-6" />
           </Link>
           <Link
             to="https://x.com/qasim_nauman_"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center transition-all duration-300 ease-in-out hover:scale-110"
+            className="transition-all duration-300 ease-in-out hover:scale-110"
           >
-            <FaSquareXTwitter  className="h-8 w-8" />
+            <FaSquareXTwitter className="md:h-8 md:w-8 h-6 w-6" />
           </Link>
           <Link
             to="https://github.com/qasimnauman"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center transition-all duration-300 ease-in-out hover:scale-110"
+            className="transition-all duration-300 ease-in-out hover:scale-110"
           >
-            <FaGithub className="h-8 w-8" />
+            <FaGithub className="md:h-8 md:w-8 h-6 w-6" />
           </Link>
           <a
             href="mailto:info@qasimnauman.tech"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center transition-all duration-300 ease-in-out hover:scale-110"
+            className="transition-all duration-300 ease-in-out hover:scale-110"
           >
-            <MdEmail className="h-8 w-8" />
+            <MdEmail className="md:h-8 md:w-8 h-6 w-6" />
           </a>
         </div>
       </div>
