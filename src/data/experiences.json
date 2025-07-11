@@ -21,17 +21,17 @@
         "images": {
             "img1": {
                 "title": "Sozorock Health",
-                "src": "src/assets/images/Sozorok Health.png",
+                "src": "images/Sozorok Health.png",
                 "desc": "Sozorock is HealthCare Platform specializing in provision of telehealth services with in US and Canada. I assisted the senior engineers architecturing a robust scalable and secure cloud infrastructure on AWS with ensuring HIPPA Compliance while taking neccessary security measures for seamless and secure payments."
             },
             "img3": {
                 "title": "Zpayd",
-                "src": "src/assets/images/zpayd.png",
+                "src": "images/zpayd.png",
                 "desc": "Zpayd is a financial technology provider offering bill payment solutions for enterprise customers. I architected their infrastructure by implementing CI/CD pipelines using GitHub Actions and establishing a secure, robust, and scalable Kubernetes cluster capable of handling 10,000 requests within 3 minutes. This setup efficiently manages load while ensuring PCI DSS compliance through the application of controls identified by Prowler."
             },
             "img2": {
                 "title": "Boullit",
-                "src": "src/assets/images/Boultlit.png",
+                "src": "images/Boultlit.png",
                 "desc": "Boullit is a Web3 decentralized platform built using Next.js, designed to enable users to earn rewards through live streaming. By leveraging blockchain technology, Boullit ensures transparency, security, and direct interaction between content creators and their audience. Users can earn rewards in real-time, fostering a more engaging and rewarding streaming experience."
             }
         }
@@ -53,7 +53,7 @@
         "images": {
             "img1": {
                 "title": "Bytewise Internship Certificate",
-                "src": "src/assets/images/Qasim Nauman - Bytewise.png",
+                "src": "images/Qasim Nauman - Bytewise.png",
                 "desc": "Earned Top Fellow recognition through consistent high performance, rapid skill acquisition, and collaborative contributions."
             }
         }
