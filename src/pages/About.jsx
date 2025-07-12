@@ -2,7 +2,7 @@ import React from "react";
 import ProfileImage from "../assets/images/image.png";
 import ExperienceData from "../data/experiences.json";
 import SkillsData from "../data/technicalskills.json";
-import { CalendarDays, ChevronRight, Globe } from "lucide-react";
+import { CalendarDays, ChevronRight, Globe, Mail } from "lucide-react";
 import { FaLinkedin, FaSquareXTwitter, FaGithub } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import ProfilesLink from "../components/About/ProfilesLink";
@@ -15,10 +15,10 @@ const About = () => {
     <>
       <div
         id="about"
-        className="text-white flex flex-col w-[90%] mt-30 mx-auto justify-center items-center mb-10"
+        className="text-white flex flex-col w-[90%] mt-20 md:mt-30 mx-auto justify-center items-center mb-10"
       >
-        <div className="flex flex-row gap-20 w-[90%] ">
-          <div className="flex-shrink-0 w-[30%] h-24 ">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-20 w-[90%] ">
+          <div className="flex-shrink-0 md:w-[30%] h-24 ">
             <img
               src={ProfileImage}
               className="h-full w-full rounded-full object-cover"
@@ -40,29 +40,38 @@ const About = () => {
             </div>
             <div className="flex flex-col">
               <div className="flex flex-col">
-                <h1 className="text-5xl font-poppins-bold">
+                <h1 className="text-4xl md:text-5xl font-poppins-bold">
                   Muhammad Qasim Nauman
                 </h1>
-                <p className="text-2xl font-poppins-medium tracking-wide">
+                <p className="text-xl md:text-2xl font-poppins-medium tracking-wide">
                   DevOps Engineer
                 </p>
               </div>
             </div>
-            <div className="flex flex-row gap-3">
+            <div className="w-max-[90%] flex flex-row flex-nowrap gap-2 sm:gap-3 justify-center md:justify-start">
+              <ProfilesLink
+                to="https://github.com/qasimnauman"
+                icon={<FaGithub className="md:h-5 md:w-5 h-3 w-3 text-white" />}
+                text="GitHub"
+              />
               <ProfilesLink
                 to="http://linkedin.com/in/mqasimnauman"
-                icon={<FaLinkedin className="h-5 w-5" />}
+                icon={
+                  <FaLinkedin className="md:h-5 md:w-5 h-3 w-3 text-white" />
+                }
                 text="LinkedIn"
               />
               <ProfilesLink
                 to="https://x.com/qasim_nauman_"
-                icon={<FaSquareXTwitter className="h-5 w-5" />}
-                text="Twitter"
+                icon={
+                  <FaSquareXTwitter className="md:h-5 md:w-5 h-3 w-3 text-white" />
+                }
+                text="X"
               />
               <ProfilesLink
-                to="https://github.com/qasimnauman"
-                icon={<FaGithub className="h-5 w-5" />}
-                text="GitHub"
+                to="mailto:m.qasimnauman@gmail.com"
+                icon={<Mail className="md:h-5 md:w-5 h-3 w-3 text-white" />}
+                text="Email"
               />
             </div>
             <div className="font-poppins-regular leading-relaxed text-sm md:text-base">
@@ -76,9 +85,9 @@ const About = () => {
                 automation.
               </p>
             </div>
-            <div className="flex flex-col mt-10 gap-6">
+            <div className="flex flex-col mt-2 md:mt-10 gap-6">
               <div>
-                <h2 className="text-5xl font-poppins-semi-bold">
+                <h2 className="text-4xl md:text-5xl font-poppins-semi-bold">
                   Work Experience
                 </h2>
               </div>
@@ -86,9 +95,10 @@ const About = () => {
                 <Experience key={idx} {...item} />
               ))}
             </div>
-            <div className="flex flex-col mt-20 gap-9">
+            {/* <div className="w-full bg-[#b5c6e028] h-1 rounded-full"></div> */}
+            <div className="flex flex-col mt-2 md:mt-10 gap-4 md:gap-6">
               <div>
-                <h2 className="text-5xl font-poppins-semi-bold">Education</h2>
+                <h2 className="text-4xl md:text-5xl font-poppins-semi-bold">Education</h2>
               </div>
               <div className="flex flex-row justify-between">
                 <div className="flex flex-col gap-2">
@@ -112,9 +122,9 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col mt-20 gap-9">
+            <div className="flex flex-col mt-2 md:mt-10 gap-4 md:gap-6">
               <div>
-                <h2 className="text-5xl font-poppins-semi-bold">
+                <h2 className="text-4xl md:text-5xl font-poppins-semi-bold">
                   Technical Skills
                 </h2>
               </div>

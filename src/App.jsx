@@ -12,6 +12,8 @@ import Navbar from "./components/Header/Navbar";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
+import Work from "./pages/Work";
+import Zpayd from "./pages/Zpayd";
 import Experience from "./pages/Experience";
 
 import NotFound from "./components/NotFound";
@@ -22,7 +24,12 @@ const router = createBrowserRouter(
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="work">
+          <Route index element={<Work />} />
+          <Route path="scalable-architecture-for-zpayd" element={<Zpayd />} />
+        </Route>
       </Route>
+
       <Route path="*" element={<NotFound />} />
     </>
   )

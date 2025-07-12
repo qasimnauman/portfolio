@@ -56,28 +56,32 @@ const Experience = ({
   // };
 
   return (
-    <div className="flex flex-col gap-6 mt-6">
+    <div className="flex flex-col gap-6 mt-2 md:mt-6">
       {/* Header */}
-      <div className="flex flex-row justify-between items-start">
-        <div className="flex flex-col gap-2">
+      <div className="flex flex-col md:flex-row gap-2 justify-between items-start">
+        <div className="flex flex-col gap-2 w-[90%]">
           <h3 className="text-2xl font-poppins-semi-bold">
             {organizationName}
           </h3>
           <p className="text-sm font-poppins-light">{position}</p>
         </div>
-        <div className="flex flex-col items-end gap-2">
-          <p className="text-md font-poppins-light">{timePeriod}</p>
+        <div className="flex flex-row justify-between md:flex-col items-end gap-2 w-full">
+          <div className="flex-shrink-0">
+            <p className="text-sm sm:text-base font-poppins-light text-white">
+              {timePeriod}
+            </p>
+          </div>
           <div className="flex flex-row gap-2">
             {linkedInURL && (
               <OrganizationLink
                 to={linkedInURL}
-                icon={<FaLinkedin className="h-5 w-5" />}
+                icon={<FaLinkedin className="h-5 w-5 text-white" />}
               />
             )}
             {websiteURL && (
               <OrganizationLink
                 to={websiteURL}
-                icon={<Globe className="h-5 w-5" />}
+                icon={<Globe className="h-5 w-5 text-white" />}
               />
             )}
           </div>
@@ -85,7 +89,7 @@ const Experience = ({
       </div>
 
       {/* Responsibilities */}
-      <ul className="mt-4 flex flex-col gap-4 text-sm md:text-base list-disc list-inside">
+      <ul className="md:mt-4 flex flex-col gap-4 text-sm md:text-base list-disc list-inside">
         {responsibilties &&
           Object.values(responsibilties).map((text, idx) => (
             <li key={idx} className="font-poppins-regular text-md">
@@ -96,7 +100,7 @@ const Experience = ({
 
       <div
         ref={carouselRef}
-        className="flex flex-row flex-nowrap gap-4 px-4 py-4 snap-x overflow-x-scroll scrollbar-hide scroll-smooth select-none"
+        className="flex flex-col md:flex-row flex-nowrap gap-4 md:px-4 md:py-4 snap-x overflow-x-scroll scrollbar-hide scroll-smooth select-none"
         onMouseDown={handleMouseDown}
       >
         {images &&
