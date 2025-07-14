@@ -14,6 +14,8 @@ import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Work from "./pages/Work";
 import Zpayd from "./pages/Zpayd";
+import Blog from "./pages/Blog";
+import Gallery from "./pages/Gallery";
 import Experience from "./pages/Experience";
 
 import NotFound from "./components/NotFound";
@@ -28,6 +30,8 @@ const router = createBrowserRouter(
           <Route index element={<Work />} />
           <Route path="scalable-architecture-for-zpayd" element={<Zpayd />} />
         </Route>
+        <Route path="blog" element={<Blog />} />
+        <Route path="gallery" element={<Gallery />} />
       </Route>
 
       <Route path="*" element={<NotFound />} />

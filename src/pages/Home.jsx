@@ -110,7 +110,7 @@ const Home = () => {
             I occasionally write about tech
           </p>
         </div>
-        <div className="w-[80%] flex flex-col sm:flex-row gap-2 sm:gap-4 mb-8 mx-auto">
+        <div className="w-[80%] md:w-[60%] flex flex-col sm:flex-row gap-2 sm:gap-4 mb-8 mx-auto">
           <input
             type="email"
             placeholder="Email"
