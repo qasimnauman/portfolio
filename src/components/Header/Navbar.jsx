@@ -7,6 +7,7 @@ import {
   LayoutGrid,
   BookText,
   Image,
+  Mail,
 } from "lucide-react";
 
 const navItems = [
@@ -15,6 +16,7 @@ const navItems = [
   { label: "Work", path: "/work", icon: <LayoutGrid size={18} /> },
   { label: "Blog", path: "/blog", icon: <BookText size={18} /> },
   { label: "Gallery", path: "/gallery", icon: <Image size={18} /> },
+  { label: "Contact", path: "/contact", icon: <Mail size={18} /> },
 ];
 
 const Navbar = () => {

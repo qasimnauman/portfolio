@@ -21,9 +21,11 @@ export default function Projects() {
             Name={project.name}
             ImgLink={project.image}
             GitHubLink={project.github}
-            WebSite={project.website}
+            WebSite={project.url}
             Description={project.description}
             technologies={project.technologies}
+            impact={project.impact}
+            featured={project.featured}
           />
         ))}
       </div>
@@ -36,9 +38,11 @@ export default function Projects() {
               Name={project.name}
               ImgLink={project.image}
               GitHubLink={project.github}
-              WebSite={project.website}
+              WebSite={project.url}
               Description={project.description}
               technologies={project.technologies}
+              impact={project.impact}
+              featured={project.featured}
             />
           ))}
         </div>

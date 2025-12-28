@@ -9,6 +9,7 @@ const Experience = ({
   organizationName,
   position,
   timePeriod,
+  location,
   linkedInURL,
   websiteURL,
   responsibilties,
@@ -58,32 +59,37 @@ const Experience = ({
   // };
 
   return (
-    <div className="flex flex-col gap-6 mt-2 md:mt-6">
+    <div className="bg-[#b5c6e015] border border-[#b5c6e020] rounded-2xl p-6 md:p-8 hover:border-[#b5c6e050] transition-all duration-300 hover:shadow-xl">
       {/* Header */}
-      <div className="flex flex-col md:flex-row gap-2 justify-between items-start">
-        <div className="flex flex-col gap-2 w-[90%]">
-          <h3 className="text-2xl font-poppins-semi-bold">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-4 mb-6">
+        <div className="flex-1">
+          <h3 className="text-2xl md:text-3xl font-poppins-bold text-[#B5C6E0] mb-2">
             {organizationName}
           </h3>
-          <p className="text-sm font-poppins-light">{position}</p>
-        </div>
-        <div className="flex flex-row justify-between md:flex-col items-end gap-2 w-full">
-          <div className="flex-shrink-0">
-            <p className="text-sm sm:text-base font-poppins-light text-white">
-              {timePeriod}
+          <p className="text-lg md:text-xl font-poppins-semi-bold text-[#B5C6E0]/80 mb-2">
+            {position}
+          </p>
+          {location && (
+            <p className="text-sm font-poppins-regular text-[#B5C6E0]/60">
+              {location}
             </p>
-          </div>
-          <div className="flex flex-row gap-2">
+          )}
+        </div>
+        <div className="flex flex-col items-end gap-3">
+          <p className="text-sm font-poppins-medium text-[#B5C6E0]/70 bg-[#b5c6e010] px-4 py-2 rounded-lg whitespace-nowrap">
+            {timePeriod}
+          </p>
+          <div className="flex gap-2">
             {linkedInURL && (
               <OrganizationLink
                 to={linkedInURL}
-                icon={<FaLinkedin className="h-5 w-5 text-white" />}
+                icon={<FaLinkedin className="h-5 w-5 text-[#B5C6E0]" />}
               />
             )}
             {websiteURL && (
               <OrganizationLink
                 to={websiteURL}
-                icon={<Globe className="h-5 w-5 text-white" />}
+                icon={<Globe className="h-5 w-5 text-[#B5C6E0]" />}
               />
             )}
           </div>
@@ -91,72 +97,49 @@ const Experience = ({
       </div>
 
       {/* Responsibilities */}
-      <ul className="md:mt-4 flex flex-col gap-4 text-sm md:text-base list-disc list-inside">
+      <div className="space-y-3 mb-6">
         {responsibilties &&
           Object.values(responsibilties).map((text, idx) => (
-            <li key={idx} className="font-poppins-regular text-md">
-              {text}
-            </li>
-          ))}
-      </ul>
-
-      <div
-        ref={carouselRef}
-        className="flex flex-col md:flex-row flex-nowrap gap-4 md:px-4 md:py-4 snap-x overflow-x-scroll scrollbar-hide scroll-smooth select-none"
-        onMouseDown={handleMouseDown}
-      >
-        {images &&
-          Object.values(images).map((src, idx) => (
-            <div key={idx} className="snap-start flex-shrink-0">
-              <img
-                // onClick={() => handleImageClick(src)}
-                loading="lazy"
-                src={src.src}
-                alt={`img-${idx}`}
-                className="rounded-lg h-40 object-cover cursor-pointer snap-center hover:scale-105 transition-transform duration-300"
-              />
+            <div key={idx} className="flex gap-3 items-start">
+              <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#B5C6E0] flex-shrink-0"></span>
+              <p className="font-poppins-regular text-sm md:text-base text-[#B5C6E0]/80 leading-relaxed">
+                {text}
+              </p>
             </div>
           ))}
       </div>
 
-      {/* Modal Popup for Image
-      {selectedImage && (
+      {/* Project Images Carousel */}
+      {images && Object.keys(images).length > 0 && (
         <div
-          className="fixed inset-0 bg-black/70 bg-opacity-50 flex justify-center items-center z-50"
-          onClick={handleOutsideClick}
+          ref={carouselRef}
+          className="flex gap-4 overflow-x-scroll scrollbar-hide scroll-smooth select-none snap-x"
+          onMouseDown={handleMouseDown}
         >
-          <div
-            style={{ borderWidth: "0.5px", borderColor: "#6e6d6d" }}
-            className="flex flex-col max-w-4xl text-white bg-gray-800 rounded-lg shadow-lg py-6 px-6"
-          >
-            <div className="flex justify-between items-center">
-              <h3 className="text-3xl font-poppins-bold">{selectedImage.title}</h3>
-              <button
-                className="border-[0.5px] rounded-full p-1 text-sm rotate-45 hover:scale-105 transition-transform duration-300 border-rounded-lg"
-                onClick={closeModal}
-              >
-                <Plus className="w-5 h-5" />
-              </button>
-            </div>
-
-            <div className="mt-6 flex flex-row justify-between gap-8">
-              <div className="">
-                <p className="text-md font-poppins-regular text-gray-300">
-                  {selectedImage.desc}
-                </p>
-              </div>
-
-              <div className="">
+          {Object.values(images).map((src, idx) => (
+            <div key={idx} className="snap-start flex-shrink-0 group">
+              <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src={selectedImage.src}
-                  alt="Expanded"
-                  className="w-96 h-full object-cover rounded-lg"
+                  loading="lazy"
+                  src={src.src}
+                  alt={src.title || `Project ${idx + 1}`}
+                  className="h-48 md:h-56 w-auto object-cover cursor-pointer transition-all duration-300 group-hover:scale-110"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                  <div>
+                    <p className="text-white font-poppins-semi-bold text-sm mb-1">
+                      {src.title}
+                    </p>
+                    <p className="text-white/80 font-poppins-regular text-xs line-clamp-2">
+                      {src.desc}
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
-      )} */}
+      )}
     </div>
   );
 };

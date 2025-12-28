@@ -1,297 +1,131 @@
 [
     {
         "id": 1,
-        "name": "Project A",
-        "description": "This is a description of Project A.",
+        "name": "Zpayd - Fintech Infrastructure",
+        "description": "Architected secure, PCI DSS-compliant Kubernetes infrastructure handling 10,000+ requests within 3 minutes. Implemented end-to-end CI/CD pipelines using GitHub Actions for automated deployments with zero downtime.",
+        "impact": {
+            "metric1": "10,000 requests/3min",
+            "metric2": "PCI DSS Compliant",
+            "metric3": "Zero-downtime deployments"
+        },
         "technologies": [
             {
-                "name": "JavaScript",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-                "link": "https://www.javascript.com/"
+                "name": "Kubernetes",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
+                "link": "https://kubernetes.io/"
             },
             {
-                "name": "React",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-                "link": "https://reactjs.org/"
+                "name": "GitHub Actions",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+                "link": "https://github.com/features/actions"
             },
             {
-                "name": "Node.js",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-                "link": "https://nodejs.org/"
+                "name": "AWS",
+                "icon": "https://res.cloudinary.com/qasim-cloudinary/image/upload/v1745831389/Portfolio/Icons/o0iq7tvkyb8fytzjuvxl.png",
+                "link": "https://aws.amazon.com/"
+            },
+            {
+                "name": "Docker",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+                "link": "https://www.docker.com/"
             }
         ],
-        "url": "https://example.com",
-        "image": "https://pmstudycircle.com/wp-content/uploads/2022/05/Project-Portfolio-Management.jpg",
-        "github": "http://github.com/qasimnauman/portfolio"
+        "url": "https://zpayd.com",
+        "image": "/images/zpayd.png",
+        "github": null,
+        "featured": true
     },
     {
         "id": 2,
-        "name": "Project B",
-        "description": "This is a description of Project B.",
+        "name": "Sozorock Health - HIPAA Compliant Infrastructure",
+        "description": "Designed robust, HIPAA-compliant telehealth infrastructure on AWS with secure payment processing for US/Canada markets. Collaborated with senior engineers to ensure healthcare data security and regulatory compliance.",
+        "impact": {
+            "metric1": "HIPAA Compliant",
+            "metric2": "Multi-region deployment",
+            "metric3": "Secure payments"
+        },
         "technologies": [
             {
-                "name": "JavaScript",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-                "link": "https://www.javascript.com/"
+                "name": "AWS",
+                "icon": "https://res.cloudinary.com/qasim-cloudinary/image/upload/v1745831389/Portfolio/Icons/o0iq7tvkyb8fytzjuvxl.png",
+                "link": "https://aws.amazon.com/"
             },
             {
-                "name": "React",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-                "link": "https://reactjs.org/"
+                "name": "Terraform",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg",
+                "link": "https://www.terraform.io/"
             },
             {
-                "name": "React",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-                "link": "https://reactjs.org/"
-            },
-            {
-                "name": "Node.js",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-                "link": "https://nodejs.org/"
+                "name": "CloudWatch",
+                "icon": "https://res.cloudinary.com/qasim-cloudinary/image/upload/v1745831389/Portfolio/Icons/o0iq7tvkyb8fytzjuvxl.png",
+                "link": "https://aws.amazon.com/cloudwatch/"
             }
         ],
-        "url": "https://example.com",
-        "image": "https://pmstudycircle.com/wp-content/uploads/2022/05/Project-Portfolio-Management.jpg",
-        "github": "http://github.com/qasimnauman/portfolio"
+        "url": null,
+        "image": "/images/Sozorok Health.png",
+        "github": null,
+        "featured": true
     },
     {
-        "id": 2,
-        "name": "Project B",
-        "description": "This is a description of Project B.",
+        "id": 3,
+        "name": "Boullit - Web3 Streaming Platform",
+        "description": "Built infrastructure for decentralized Web3 live streaming platform with blockchain-based reward system. Deployed scalable containerized architecture supporting real-time streaming and cryptocurrency transactions.",
+        "impact": {
+            "metric1": "Real-time streaming",
+            "metric2": "Blockchain integration",
+            "metric3": "Scalable architecture"
+        },
         "technologies": [
             {
-                "name": "JavaScript",
+                "name": "Next.js",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+                "link": "https://nextjs.org/"
+            },
+            {
+                "name": "Docker",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+                "link": "https://www.docker.com/"
+            },
+            {
+                "name": "Web3",
                 "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-                "link": "https://www.javascript.com/"
-            },
-            {
-                "name": "React",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-                "link": "https://reactjs.org/"
-            },
-            {
-                "name": "React",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-                "link": "https://reactjs.org/"
-            },
-            {
-                "name": "Node.js",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-                "link": "https://nodejs.org/"
+                "link": "https://web3js.readthedocs.io/"
             }
         ],
-        "url": "https://example.com",
-        "image": "https://pmstudycircle.com/wp-content/uploads/2022/05/Project-Portfolio-Management.jpg",
-        "github": "http://github.com/qasimnauman/portfolio"
+        "url": null,
+        "image": "/images/Boultlit.png",
+        "github": null,
+        "featured": false
     },
     {
-        "id": 2,
-        "name": "Project B",
-        "description": "This is a description of Project B.",
+        "id": 4,
+        "name": "Three-Tier AWS Infrastructure",
+        "description": "Architected secure, scalable three-tier architecture using Terraform with infrastructure-as-code best practices. Implemented VPC, EC2, RDS, and Load Balancer configuration for high availability.",
+        "impact": {
+            "metric1": "IaC automated",
+            "metric2": "Highly available",
+            "metric3": "Cost optimized"
+        },
         "technologies": [
             {
-                "name": "JavaScript",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-                "link": "https://www.javascript.com/"
+                "name": "Terraform",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg",
+                "link": "https://www.terraform.io/"
             },
             {
-                "name": "React",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-                "link": "https://reactjs.org/"
+                "name": "AWS",
+                "icon": "https://res.cloudinary.com/qasim-cloudinary/image/upload/v1745831389/Portfolio/Icons/o0iq7tvkyb8fytzjuvxl.png",
+                "link": "https://aws.amazon.com/"
             },
             {
-                "name": "React",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-                "link": "https://reactjs.org/"
-            },
-            {
-                "name": "Node.js",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-                "link": "https://nodejs.org/"
+                "name": "CloudWatch",
+                "icon": "https://res.cloudinary.com/qasim-cloudinary/image/upload/v1745831389/Portfolio/Icons/o0iq7tvkyb8fytzjuvxl.png",
+                "link": "https://aws.amazon.com/cloudwatch/"
             }
         ],
-        "url": "https://example.com",
-        "image": "https://pmstudycircle.com/wp-content/uploads/2022/05/Project-Portfolio-Management.jpg",
-        "github": "http://github.com/qasimnauman/portfolio"
-    },
-    {
-        "id": 2,
-        "name": "Project B",
-        "description": "This is a description of Project B.",
-        "technologies": [
-            {
-                "name": "JavaScript",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-                "link": "https://www.javascript.com/"
-            },
-            {
-                "name": "React",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-                "link": "https://reactjs.org/"
-            },
-            {
-                "name": "React",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-                "link": "https://reactjs.org/"
-            },
-            {
-                "name": "Node.js",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-                "link": "https://nodejs.org/"
-            }
-        ],
-        "url": "https://example.com",
-        "image": "https://pmstudycircle.com/wp-content/uploads/2022/05/Project-Portfolio-Management.jpg",
-        "github": "http://github.com/qasimnauman/portfolio"
-    },
-    {
-        "id": 2,
-        "name": "Project B",
-        "description": "This is a description of Project B.",
-        "technologies": [
-            {
-                "name": "JavaScript",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-                "link": "https://www.javascript.com/"
-            },
-            {
-                "name": "React",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-                "link": "https://reactjs.org/"
-            },
-            {
-                "name": "React",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-                "link": "https://reactjs.org/"
-            },
-            {
-                "name": "Node.js",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-                "link": "https://nodejs.org/"
-            }
-        ],
-        "url": "https://example.com",
-        "image": "https://pmstudycircle.com/wp-content/uploads/2022/05/Project-Portfolio-Management.jpg",
-        "github": "http://github.com/qasimnauman/portfolio"
-    },
-    {
-        "id": 2,
-        "name": "Project B",
-        "description": "This is a description of Project B.",
-        "technologies": [
-            {
-                "name": "JavaScript",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-                "link": "https://www.javascript.com/"
-            },
-            {
-                "name": "React",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-                "link": "https://reactjs.org/"
-            },
-            {
-                "name": "React",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-                "link": "https://reactjs.org/"
-            },
-            {
-                "name": "Node.js",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-                "link": "https://nodejs.org/"
-            }
-        ],
-        "url": "https://example.com",
-        "image": "https://pmstudycircle.com/wp-content/uploads/2022/05/Project-Portfolio-Management.jpg",
-        "github": "http://github.com/qasimnauman/portfolio"
-    },
-    {
-        "id": 2,
-        "name": "Project B",
-        "description": "This is a description of Project B.",
-        "technologies": [
-            {
-                "name": "JavaScript",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-                "link": "https://www.javascript.com/"
-            },
-            {
-                "name": "React",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-                "link": "https://reactjs.org/"
-            },
-            {
-                "name": "React",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-                "link": "https://reactjs.org/"
-            },
-            {
-                "name": "Node.js",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-                "link": "https://nodejs.org/"
-            }
-        ],
-        "url": "https://example.com",
-        "image": "https://pmstudycircle.com/wp-content/uploads/2022/05/Project-Portfolio-Management.jpg",
-        "github": "http://github.com/qasimnauman/portfolio"
-    },
-    {
-        "id": 2,
-        "name": "Project B",
-        "description": "This is a description of Project B.",
-        "technologies": [
-            {
-                "name": "JavaScript",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-                "link": "https://www.javascript.com/"
-            },
-            {
-                "name": "React",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-                "link": "https://reactjs.org/"
-            },
-            {
-                "name": "React",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-                "link": "https://reactjs.org/"
-            },
-            {
-                "name": "Node.js",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-                "link": "https://nodejs.org/"
-            }
-        ],
-        "url": "https://example.com",
-        "image": "https://pmstudycircle.com/wp-content/uploads/2022/05/Project-Portfolio-Management.jpg",
-        "github": "http://github.com/qasimnauman/portfolio"
-    },
-    {
-        "id": 2,
-        "name": "Project B",
-        "description": "This is a description of Project B.",
-        "technologies": [
-            {
-                "name": "JavaScript",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-                "link": "https://www.javascript.com/"
-            },
-            {
-                "name": "React",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-                "link": "https://reactjs.org/"
-            },
-            {
-                "name": "React",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-                "link": "https://reactjs.org/"
-            },
-            {
-                "name": "Node.js",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-                "link": "https://nodejs.org/"
-            }
-        ],
-        "url": "https://example.com",
-        "image": "https://pmstudycircle.com/wp-content/uploads/2022/05/Project-Portfolio-Management.jpg",
-        "github": "http://github.com/qasimnauman/portfolio"
+        "url": null,
+        "image": null,
+        "github": "https://github.com/qasimnauman/terraform-aws-3-tier-architecture",
+        "featured": false
     }
 ]

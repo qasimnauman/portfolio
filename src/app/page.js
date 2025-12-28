@@ -7,16 +7,59 @@ import {
   CircleChevronRight,
 } from "lucide-react";
 import NavigationCard from "@/components/Home/NavigationCards";
+import ImpactMetrics from "@/components/Home/ImpactMetrics";
+import StructuredData from "@/components/SEO/StructuredData";
+import { homePageSEO, openGraphConfig, twitterConfig, robotsConfig } from "@/config/seo";
+import { 
+  personSchema, 
+  professionalServiceSchema, 
+  websiteSchema,
+  homeBreadcrumb 
+} from "@/config/structuredData";
+
+export const metadata = {
+  title: homePageSEO.title,
+  description: homePageSEO.description,
+  keywords: homePageSEO.keywords,
+  alternates: {
+    canonical: homePageSEO.canonical,
+  },
+  openGraph: {
+    ...openGraphConfig,
+    title: homePageSEO.title,
+    description: homePageSEO.description,
+  },
+  twitter: {
+    ...twitterConfig,
+    title: homePageSEO.title,
+    description: homePageSEO.description,
+  },
+  robots: robotsConfig,
+};
 
 export default function Home() {
   return (
-    <div className="w-full md:w-[90%] mx-auto ">
-      <div className="flex flex-col md:flex-row items-center justify-center px-8 md:py-16 gap-12">
-        <div className="w-full md:w-[80%] flex flex-col">
-          <div className="md:text-8xl text-4xl text-left md:text-center mt-16 leading-normal md:leading-36 md:tracking-wide text-[#B5C6E0] font-poppins-bold">
-            I Build Scalable Compliant Cloud Infrastructures
+    <>
+      {/* JSON-LD Structured Data for SEO */}
+      <StructuredData 
+        data={[
+          personSchema,
+          professionalServiceSchema,
+          websiteSchema,
+          homeBreadcrumb
+        ]} 
+      />
+      
+      <div className="w-full md:w-[90%] mx-auto ">
+      <div className="flex flex-col md:flex-row items-center justify-center mt-24 px-8 md:py-16 gap-12">
+        <div className="w-full md:w-[70%] flex flex-col">
+          {/* <div className="text-lg md:text-2xl text-center font-poppins-semi-bold text-[#B5C6E0]/80 mb-4">
+            Junior DevOps Engineer
+          </div> */}
+          <div className="md:text-7xl text-4xl text-center mt-2 leading-normal md:leading-tight md:tracking-wider text-[#B5C6E0] font-poppins-bold">
+            Building Secure, Scalable, & Compliant Cloud Infrastructures
           </div>
-          <div className="mt-8 flex flex-col md:flex-row gap-4 justify-start md:justify-center md:items-start">
+          <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center md:items-center">
             <div>
               <NavigationCard
                 to="/about"
@@ -37,6 +80,9 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Impact Metrics Section */}
+      {/* <ImpactMetrics /> */}
+
       <div className="w-[85%] md:w-[65%] mx-auto my-8 md:my-10 flex flex-col md:flex-row justify-center gap-4 md:gap-8 text-[#B5C6E0]">
         <div className="md:w-[40%]">
           <h2 className="text-3xl md:text-4xl font-poppins-semi-bold">
@@ -45,9 +91,7 @@ export default function Home() {
         </div>
         <div className="md:w-[60%] flex flex-col gap-4">
           <p className="font-poppins-regular text-sm">
-            I architected their infrastructure by implementing CI/CD pipelines
-            using GitHub Actions and establishing a secure, robust, and scalable
-            infrastructure
+            Architected PCI DSS-compliant Kubernetes infrastructure handling 10,000+ requests within 3 minutes using GitHub Actions CI/CD pipelines.
           </p>
           <Link href="/work/scalable-architecture-for-zpayd">
             <div className="flex flex-row items-center">
@@ -95,5 +139,6 @@ export default function Home() {
         </div>
       </div>
     </div>
+    </>
   );
 }
