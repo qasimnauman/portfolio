@@ -1,10 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const ProfilesLink = ({ to, icon, text }) => {
   return (
     <Link
-      to={to}
+      href={to}
       target="_blank"
       rel="noopener noreferrer"
       className="flex items-center justify-center bg-[#b5c6e028] gap-2 transition-all duration-300 ease-in-out hover:scale-101 border-[0.5px] hover:border-1 px-2 rounded-lg"

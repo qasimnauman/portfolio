@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import TechnologyCard from "./TechCard";
@@ -14,11 +14,12 @@ const ProjectCard = ({
   return (
     <>
       <div className="flex flex-col justify-center w-[400px] rounded-3xl bg-[#3e3cbd]">
-        <div className="p-[10px]">
-          <img
+        <div className="p-[10px] relative h-[200px]">
+          <Image
             src={ImgLink}
-            alt="projectImg"
-            className="rounded-2xl w-full h-[200px] object-cover"
+            alt={Name || "Project Image"}
+            fill
+            className="rounded-2xl object-cover"
           />
         </div>
         <div className="p-4 text-gray-200">

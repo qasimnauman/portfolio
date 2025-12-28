@@ -1,4 +1,6 @@
-import React, { useRef } from "react";
+"use client";
+
+import { useRef } from "react";
 import useIsVisible from "../../hooks/isVisible";
 import Skills from "./Skills";
 

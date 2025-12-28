@@ -1,5 +1,3 @@
-import React from "react";
-
 const TechnicalSkill = ({ title, description }) => {
   return (
     <div className="flex flex-row">

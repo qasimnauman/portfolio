@@ -1,5 +1,4 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 
 const OrganizationLink = ({
     to,
@@ -8,7 +7,7 @@ const OrganizationLink = ({
 }) => {
   return (
     <Link
-      to={to}
+      href={to}
       target="_blank"
       rel="noopener noreferrer"
       className="flex items-center justify-center gap-2 transition-all duration-300 ease-in-out hover:scale-105"

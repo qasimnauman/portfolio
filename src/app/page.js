@@ -1,9 +1,4 @@
-import React from "react";
-import {
-  FaCircleChevronRight,
-  FaCircleUser,
-  FaCalendarDay,
-} from "react-icons/fa6";
+import Link from "next/link";
 import {
   Minus,
   ChevronRight,
@@ -11,10 +6,9 @@ import {
   CircleUserRound,
   CircleChevronRight,
 } from "lucide-react";
-import { Link } from "react-router-dom";
-import NavigationCard from "../components/Home/NavigationCards";
+import NavigationCard from "@/components/Home/NavigationCards";
 
-const Home = () => {
+export default function Home() {
   return (
     <div className="w-full md:w-[90%] mx-auto ">
       <div className="flex flex-col md:flex-row items-center justify-center px-8 md:py-16 gap-12">
@@ -25,7 +19,7 @@ const Home = () => {
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-start md:justify-center md:items-start">
             <div>
               <NavigationCard
-                to="about"
+                to="/about"
                 icon1={<CircleUserRound className="h-8 w-8" />}
                 icon2={<CircleChevronRight className="h-5 w-5" />}
                 text="More About Me"
@@ -55,9 +49,9 @@ const Home = () => {
             using GitHub Actions and establishing a secure, robust, and scalable
             infrastructure
           </p>
-          <Link to="work/scalable-architecture-for-zpayd">
+          <Link href="/work/scalable-architecture-for-zpayd">
             <div className="flex flex-row items-center">
-              <p className="font-poppins-regular text-sm relative inline-block after:ml-1 pb-0.5 before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white hover:before:w-full before:transition-all before:duration-300">
+              <p className="font-poppins-regular text-sm relative inline-block after:ml-1 pb-0.5 before:absolute before:left-0 before:bottom-0 before:w-0 before:h-px before:bg-white hover:before:w-full before:transition-all before:duration-300">
                 Read Case Study
               </p>
               <ChevronRight className="h-5 w-5" />
@@ -70,9 +64,9 @@ const Home = () => {
         <div className="w-full sm:w-[80%] md:w-[50%] flex flex-row items-center justify-start group">
           <Minus className="transition-transform duration-400 rotate-90 group-hover:rotate-0 h-5 w-5 text-[#B5C6E0]" />
           <Link
+            href="https://medium.com/@m.qasimnauman/understanding-microservices-a-beginners-guide-to-kubernetes-48a616e29876"
             target="_blank"
             rel="noopener noreferrer"
-            to="https://medium.com/@m.qasimnauman/understanding-microservices-a-beginners-guide-to-kubernetes-48a616e29876"
             className="flex flex-col ml-2 group-hover:translate-x-2 transition-transform duration-300"
           >
             <h3 className="font-poppins-semi-bold text-xl text-[#B5C6E0]">
@@ -86,9 +80,9 @@ const Home = () => {
         <div className="w-full sm:w-[80%] md:w-[50%] flex flex-row items-center justify-start group">
           <Minus className="transition-transform duration-400 rotate-90 group-hover:rotate-0 h-5 w-5 text-[#B5C6E0]" />
           <Link
+            href="https://medium.com/@m.qasimnauman/terraform-workspaces-8cb20d8965fa"
             target="_blank"
             rel="noopener noreferrer"
-            to="https://medium.com/@m.qasimnauman/terraform-workspaces-8cb20d8965fa"
             className="flex flex-col ml-2 group-hover:translate-x-2 transition-transform duration-300"
           >
             <h3 className="font-poppins-semi-bold text-xl text-[#B5C6E0]">
@@ -100,29 +94,6 @@ const Home = () => {
           </Link>
         </div>
       </div>
-
-      <div className="w-[90%] md:w-[65%] m-10 mx-auto flex flex-col gap-4 justify-center items-center text-[#B5C6E0] rounded-lg bg-[#b5c6e028] border border-[#6e6d6d]">
-        <div className="text-center mt-8 w-full">
-          <h3 className="font-poppins-bold text-lg md:text-3xl">
-            Subscribe to Qasim's Newsletter
-          </h3>
-          <p className="font-poppins-regular text-sm md:text-lg mt-2">
-            I occasionally write about tech
-          </p>
-        </div>
-        <div className="w-[80%] md:w-[60%] flex flex-col sm:flex-row gap-2 sm:gap-4 mb-8 mx-auto">
-          <input
-            type="email"
-            placeholder="Email"
-            className="flex-1 p-2 rounded-lg text-sm sm:text-base md:text-lg font-poppins-regular text-[#B5C6E0] bg-transparent border border-[#6e6d6d] focus:outline-none focus:ring-2 focus:ring-[#B5C6E0] focus:border-transparent placeholder-[#B5C6E0] placeholder-opacity-70"
-          />
-          <button className="px-3 py-2 sm:px-4 sm:py-2 text-sm sm:text-base md:text-lg text-[#1E2A44] bg-[#B5C6E0] rounded-lg font-poppins-medium hover:bg-[#A0B0D0] hover:cursor-pointer transition-colors duration-300">
-            Sign Up
-          </button>
-        </div>
-      </div>
     </div>
   );
-};
-
-export default Home;
+}

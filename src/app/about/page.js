@@ -1,16 +1,14 @@
-import React from "react";
-import ProfileImage from "../assets/images/image.png";
-import ExperienceData from "../data/experiences.json";
-import SkillsData from "../data/technicalskills.json";
-import { CalendarDays, ChevronRight, Globe, Mail } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import ExperienceData from "@/data/experiences.json";
+import SkillsData from "@/data/technicalskills.json";
+import { CalendarDays, ChevronRight, Mail } from "lucide-react";
 import { FaLinkedin, FaSquareXTwitter, FaGithub } from "react-icons/fa6";
-import { Link } from "react-router-dom";
-import ProfilesLink from "../components/About/ProfilesLink";
-import OrganizationLink from "../components/About/OrganizationLink";
-import Experience from "../components/About/Experience";
-import TechnicalSkill from "../components/About/TechnicalSkill";
+import ProfilesLink from "@/components/About/ProfilesLink";
+import Experience from "@/components/About/Experience";
+import TechnicalSkill from "@/components/About/TechnicalSkill";
 
-const About = () => {
+export default function About() {
   return (
     <>
       <div
@@ -19,10 +17,12 @@ const About = () => {
       >
         <div className="flex flex-col md:flex-row gap-8 md:gap-20 w-[90%] ">
           <div className="flex-shrink-0 md:w-[30%] h-24 ">
-            <img
-              src={ProfileImage}
+            <Image
+              src="/assets/images/image.png"
+              width={400}
+              height={400}
+              alt="Muhammad Qasim Nauman - DevOps Engineer"
               className="h-full w-full rounded-full object-cover"
-              alt="Profile"
             />
           </div>
           <div className="flex flex-col gap-5">
@@ -30,7 +30,7 @@ const About = () => {
               <CalendarDays />
               <p className="font-poppins-medium">Schedule a Call</p>
               <Link
-                to="https://cal.com/qasimnauman"
+                href="https://cal.com/qasimnauman"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full border-[0.5px] hover:outline hover:scale-105 hover:cursor-pointer transition-all ease-in-out duration-300 "
@@ -95,7 +95,6 @@ const About = () => {
                 <Experience key={idx} {...item} />
               ))}
             </div>
-            {/* <div className="w-full bg-[#b5c6e028] h-1 rounded-full"></div> */}
             <div className="flex flex-col mt-2 md:mt-10 gap-4 md:gap-6">
               <div>
                 <h2 className="text-4xl md:text-5xl font-poppins-semi-bold">Education</h2>
@@ -106,7 +105,7 @@ const About = () => {
                     Air University
                   </h3>
                   <p className="text-sm font-poppins-light">
-                    Bachelor's in Computer Science
+                    Bachelor&apos;s in Computer Science
                   </p>
                 </div>
                 <div className="flex flex-col items-end gap-2">
@@ -137,6 +136,4 @@ const About = () => {
       </div>
     </>
   );
-};
-
-export default About;
+}

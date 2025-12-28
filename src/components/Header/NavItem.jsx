@@ -1,18 +1,24 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const NavItem = ({ label, path, icon }) => {
+  const pathname = usePathname();
+  const isActive = pathname === path;
+
   return (
-    <NavLink
-      to={path}
-      className={({ isActive }) => `
-        flex items-center font-poppins-regular gap-2 px-2 py-2 rounded-xl text-[#B5C6E0] text-sm transition-all ease-in-out duration-300 hover:text-[#cde1ff] hover:scale-102 hover:bg-[#b5c6e032]
-        ${isActive ? "font-poppins-medium bg-[#b5c6e028] text-[#7e899b]" : ""}
-      `}
+    <Link
+      href={path}
+      className={`flex items-center gap-2 px-4 py-2 rounded-xl transition-all duration-300 ${
+        isActive
+          ? "bg-white/20 text-white"
+          : "text-white/70 hover:text-white hover:bg-white/10"
+      }`}
     >
       {icon}
-      <span className="hidden lg:inline">{label}</span>
-    </NavLink>
+      <span className="hidden md:inline font-poppins-medium">{label}</span>
+    </Link>
   );
 };
 

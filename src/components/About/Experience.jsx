@@ -1,4 +1,6 @@
-import React, { useRef } from "react";
+"use client";
+
+import { useRef } from "react";
 import { Globe, Plus } from "lucide-react";
 import { FaLinkedin } from "react-icons/fa6";
 import OrganizationLink from "./OrganizationLink";
