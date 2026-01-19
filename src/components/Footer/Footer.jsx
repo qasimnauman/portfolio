@@ -9,38 +9,38 @@ const Footer = () => {
         <div className="text-sm md:text-md font-poppins-medium">
           © 2025 Qasim Nauman
         </div>
-        <div className="flex flex-row gap-2 md:gap-4 justify-center items-center">
+        <div className="flex flex-row gap-3 md:gap-4 justify-center items-center">
           <Link
             href="http://linkedin.com/in/mqasimnauman"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition-all duration-300 ease-in-out hover:scale-110"
+            className="transition-all duration-300 ease-in-out hover:scale-110 p-2 hover:bg-[#B5C6E0]/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#B5C6E0]"
           >
-            <FaLinkedinIn className="md:h-6 md:w-6 h-4 w-4" />
+            <FaLinkedinIn className="h-6 w-6" />
           </Link>
           <Link
             href="https://x.com/qasim_nauman_"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition-all duration-300 ease-in-out hover:scale-110"
+            className="transition-all duration-300 ease-in-out hover:scale-110 p-2 hover:bg-[#B5C6E0]/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#B5C6E0]"
           >
-            <FaSquareXTwitter className="md:h-6 md:w-6 h-4 w-4" />
+            <FaSquareXTwitter className="h-6 w-6" />
           </Link>
           <Link
             href="https://github.com/qasimnauman"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition-all duration-300 ease-in-out hover:scale-110"
+            className="transition-all duration-300 ease-in-out hover:scale-110 p-2 hover:bg-[#B5C6E0]/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#B5C6E0]"
           >
-            <FaGithub className="md:h-6 md:w-6 h-4 w-4" />
+            <FaGithub className="h-6 w-6" />
           </Link>
           <a
             href="mailto:info@qasimnauman.tech"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition-all duration-300 ease-in-out hover:scale-110"
+            className="transition-all duration-300 ease-in-out hover:scale-110 p-2 hover:bg-[#B5C6E0]/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#B5C6E0]"
           >
-            <MdEmail className="md:h-6 md:w-6 h-4 w-4" />
+            <MdEmail className="h-6 w-6" />
           </a>
         </div>
       </div>

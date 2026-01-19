@@ -10,7 +10,7 @@ const OrganizationLink = ({
       href={to}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex items-center justify-center gap-2 p-2 rounded-lg bg-[#b5c6e015] border border-[#b5c6e020] hover:bg-[#b5c6e025] hover:border-[#b5c6e050] transition-all duration-300"
+      className="flex items-center justify-center gap-2 p-2 rounded-lg bg-transparent border border-[#B5C6E0]/30 hover:bg-[#B5C6E0]/[0.12] hover:border-[#B5C6E0]/50 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#B5C6E0]"
     >
       {icon}
     </Link>

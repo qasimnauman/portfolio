@@ -1,6 +1,8 @@
 import "./globals.css";
 import Navbar from "@/components/Header/Navbar";
 import Footer from "@/components/Footer/Footer";
+import GoogleAnalytics from "@/components/Analytics/GoogleAnalytics";
+import { GA_MEASUREMENT_ID } from "@/lib/analytics";
 
 export const metadata = {
   title: "Muhammad Qasim Nauman - DevOps Engineer | AWS & Azure Cloud Specialist",
@@ -77,6 +79,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="antialiased">
+        <GoogleAnalytics measurementId={GA_MEASUREMENT_ID} />
         <Navbar />
         <main>{children}</main>
         <Footer />

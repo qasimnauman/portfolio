@@ -6,7 +6,7 @@ const ProfilesLink = ({ to, icon, text }) => {
       href={to}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#b5c6e015] text-[#B5C6E0] border border-[#b5c6e020] hover:bg-[#b5c6e025] hover:border-[#b5c6e050] transition-all duration-300 font-poppins-medium"
+      className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-transparent text-[#D0DDF0] border border-[#B5C6E0]/30 hover:bg-[#B5C6E0]/[0.12] hover:border-[#B5C6E0]/50 hover:text-[#E8EEF7] transition-all duration-300 font-poppins-medium focus:outline-none focus:ring-2 focus:ring-[#B5C6E0] focus:ring-offset-2 focus:ring-offset-[#0a0a0a]"
     >
       {icon}
       <span className="text-sm md:text-base">{text}</span>

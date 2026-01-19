@@ -59,18 +59,18 @@ const Experience = ({
   // };
 
   return (
-    <div className="bg-[#b5c6e015] border border-[#b5c6e020] rounded-2xl p-6 md:p-8 hover:border-[#b5c6e050] transition-all duration-300 hover:shadow-xl">
+    <div className="bg-[#B5C6E0]/[0.08] border border-[#B5C6E0]/20 rounded-2xl p-6 md:p-8 hover:border-[#B5C6E0]/40 hover:bg-[#B5C6E0]/[0.12] transition-all duration-300 hover:shadow-2xl hover:shadow-[#B5C6E0]/10">
       {/* Header */}
       <div className="flex flex-col md:flex-row justify-between items-start gap-4 mb-6">
         <div className="flex-1">
-          <h3 className="text-2xl md:text-3xl font-poppins-bold text-[#B5C6E0] mb-2">
+          <h3 className="text-2xl md:text-3xl font-poppins-bold text-[#E8EEF7] mb-2">
             {organizationName}
           </h3>
-          <p className="text-lg md:text-xl font-poppins-semi-bold text-[#B5C6E0]/80 mb-2">
+          <p className="text-lg md:text-xl font-poppins-semi-bold text-[#D0DDF0]/90 mb-2">
             {position}
           </p>
           {location && (
-            <p className="text-sm font-poppins-regular text-[#B5C6E0]/60">
+            <p className="text-sm font-poppins-regular text-[#D0DDF0]/70">
               {location}
             </p>
           )}
@@ -102,7 +102,7 @@ const Experience = ({
           Object.values(responsibilties).map((text, idx) => (
             <div key={idx} className="flex gap-3 items-start">
               <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#B5C6E0] flex-shrink-0"></span>
-              <p className="font-poppins-regular text-sm md:text-base text-[#B5C6E0]/80 leading-relaxed">
+              <p className="font-poppins-regular text-sm md:text-base text-[#D0DDF0]/85 leading-relaxed">
                 {text}
               </p>
             </div>

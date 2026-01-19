@@ -1,9 +1,9 @@
 const TechnicalSkill = ({ title, description }) => {
   return (
-    <div className="bg-[#b5c6e015] border border-[#b5c6e020] rounded-xl p-6 hover:border-[#b5c6e050] hover:shadow-lg transition-all duration-300">
+    <div className="bg-[#B5C6E0]/[0.08] border border-[#B5C6E0]/20 rounded-xl p-6 hover:border-[#B5C6E0]/40 hover:bg-[#B5C6E0]/[0.12] hover:shadow-lg transition-all duration-300">
       <div className="flex flex-col gap-2">
-        <h3 className="text-xl font-poppins-semi-bold text-[#B5C6E0]">{title}</h3>
-        <p className="text-sm font-poppins-regular text-[#B5C6E0]/70 leading-relaxed">{description}</p>
+        <h3 className="text-xl font-poppins-semi-bold text-[#E8EEF7]">{title}</h3>
+        <p className="text-sm font-poppins-regular text-[#D0DDF0]/80 leading-relaxed">{description}</p>
       </div>
     </div>
   );

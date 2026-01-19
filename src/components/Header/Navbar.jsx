@@ -21,8 +21,8 @@ const navItems = [
 
 const Navbar = () => {
   return (
-    <nav className="fixed md:top-8 h-13 left-1/2 -translate-x-1/2 bottom-8 bg-black/10 backdrop-blur-md border border-white/20 shadow-lg px-6 py-2 rounded-2xl z-50">
-      <ul className="flex items-center justify-between gap-4">
+    <nav className="fixed md:top-8 h-16 left-1/2 -translate-x-1/2 bottom-6 bg-black/30 backdrop-blur-xl border border-white/20 shadow-2xl px-4 md:px-6 py-2 rounded-2xl z-50">
+      <ul className="flex items-center justify-between gap-1 md:gap-4">
         {navItems.map(({ label, path, icon }) => (
           <li key={label}>
             <NavItem label={label} path={path} icon={icon} />
